@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+</head>
+<style>
+       #top{
+        display: flex;
+        justify-content: space-between;
+    }
+    #box{
+        margin-top: 5vw;
+        margin-left: 35vw;
+        
+    }
+    #user_name{
+        margin-top: 1vw;
+        margin-left: 30vw;
+    }
+</style>
+<body>
+    <div id="top">
+        <h1>Checkout | Cost : 100/ seat</h1>
+        <h1 id="wallet"></h1>
+    </div>
+    <input id="user_name" />
+    <input id="number_of_seats"/>
+    <button id="confirm" onclick="confirm()">confirm Booking </button>
+    <div id="container"></div>
+</body>
+</html>
+<script src="./scripts/checkout.js"></script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie page</title>
+</head>
+<style>
+     #top{
+        display: flex;
+        justify-content: space-between;
+    }
+    #movies{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+        grid-gap: 1vw;
+    }
+    #box{
+        border: 1px solid black;
+    }
+    #movies{
+        margin-top: 2vw;
+    }
+
+</style>
+<body>
+    <div id="top">
+        <h1>Money in your Wallet</h1>
+        <h1 id="wallet"></h1>
+    </div>
+    <input id="search" type="text" placeholder="Search movie" oninput="debounce(main,2000)" />
+   
+    <div id="movies"></div>
+</body>
+</html>
+<script src="./scripts/movies.js"></script>
